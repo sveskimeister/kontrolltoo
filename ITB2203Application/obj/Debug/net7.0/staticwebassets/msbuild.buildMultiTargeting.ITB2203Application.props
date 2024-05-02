@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ITB2203Application.props" />
+</Project>
