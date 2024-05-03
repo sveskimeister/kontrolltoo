@@ -62,6 +62,13 @@ public class TicketsController : ControllerBase
         {
             return BadRequest();
         }
+        
+        var existingSeatNo = _context.Tickets.FirstOrDefault(s => s.SeatNo == ticket.SeatNo);
+        if (existingSeatNo != null)
+        {
+            return BadRequest();
+        }
+
         if (dbExercise == null)
         {
             _context.Add(ticket);

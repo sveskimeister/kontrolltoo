@@ -69,6 +69,12 @@ public class SessionsController : ControllerBase
         var dbExercise = _context.Sessions!.Find(session.Id);
         if (dbExercise == null)
         {
+            var IsMovieIdCorrect = _context.Session.FirstOrDefault(s => s.Id == Movie.MovieId);
+            if (IsMovieIdCorrect != null)
+            {
+                return BadRequest();
+            }
+
             _context.Add(session);
             _context.SaveChanges();
 

@@ -1,0 +1,19 @@
+{
+  "FilePath": "c:\\Users\\opilane\\source\\repos\\kontrolltoo\\ITB2203Application\\ITB2203Application.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "6.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 1000
+  },
+  "RootNamespace": "ITB2203Application",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
